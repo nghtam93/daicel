@@ -1,0 +1,25 @@
+.header{
+
+	@media (max-width: 1399px){
+
+
+	}
+	@media (max-width: 1299px){
+
+	}
+	@media (max-width: 1199px){
+
+
+	}
+	@media (max-width: 991px){
+
+	}
+
+	@media (max-width: 575px){
+
+	}
+}
+@keyframes stuckMoveDown{
+    0%{transform:translateY(-100%)}
+    100%{transform:translateY(0)}
+}
