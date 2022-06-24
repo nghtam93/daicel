@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;900&family=Poppins:wght@300;400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;900&family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
-@import "../libs/bootstrap/scss/bootstrap";
+//mixin
+@import "_mixin/base";
+
+@import "../libs/bootstrap/css/bootstrap.min.css";
+// @import "../libs/bootstrap/scss/bootstrap";
 @import "_components/base";
 @import "_components/icon";
 @import "_components/effect";

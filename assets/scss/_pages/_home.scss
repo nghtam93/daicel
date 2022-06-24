@@ -8,14 +8,15 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			width: 70%;
+			width: 72%;
 			height: calc(100% + 70px);
 			background: #f7f7f5;
 		}
 		.thumb.ratio {
-			width: 76%;
+			width: 80%;
 			display: inline-block;
-			overflow: hidden;			
+			overflow: hidden;
+			--bs-aspect-ratio: 65%;
 		}
 		.ratio > * {
 			object-fit: cover;
@@ -27,44 +28,72 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		padding-top: 200px;
 		text-align: left;
 		.container {
 			font-family: 'Shippori Mincho', serif;
 		}
 		.title {
-			font-size: 37px;
-			margin: 0 0 15px;
+			font-size: 38px;
+			margin: 0 0 20px;
 			font-weight: 700;
+			@include letter-spacing(200);
 		}
 		.sub {
-			font-size: 28px;
+			font-size: 26px;
 			font-weight: 400;
+			@include letter-spacing(200);
 		}
 	}
 	.ss_news {
+		margin-bottom: 0;
+		padding-bottom: 50px;
 		.list_news{
 			li {
-				margin: 0 0 12px;
+
+				&:not(:last-child){
+					margin: 0 0 20px;
+				}
 			}
 			.date {
+				font-size: 11px;
 				margin-right: 10px;
 				color: #979797;
 			}
 			.text {
+				font-size: 14px;
 				color: #4c4c4c;
 			}
 		}
 	}
 	.ss_recommend{
+		position: relative;
+		overflow: hidden;
+		padding: 80px 0 80px;
+		&::before {
+			content: '';
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 82%;
+		    background: #F4F4F4;
+		    z-index: -1;
+		    pointer-events: none;
+		    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100%);
+		}
 		.recommand_slide {
-			padding-top: 15px;
+			width: 100vw;
+			padding: 6px;
 		}
 		.swiper-slide {
-			width: 20%;
+			width: 100%;
+			max-width: 240px;
 		}
 		.thumb {
 			box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
-			padding: 35px;			
+			padding: 35px;
+			background: #fff;
 		}
 		.thumb .ratio {
 			display: block;
@@ -76,6 +105,7 @@
 					display: block;
 					color: #000;
 					font-size: 15px;
+					font-weight: 700;
 				}
 			}
 			.des {
@@ -84,7 +114,7 @@
 			.price {
 				font-size: 15px;
 				padding-left: 28px;
-				margin: 12px 0 0;
+				margin: 6px 0 0;
 				position: relative;
 				&::before {
 					content: "";
@@ -95,6 +125,89 @@
 					height: 2px;
 					background: #dfdfdf;
 				}
+			}
+		}
+	}
+
+	.ss_wellmethod{
+		position: relative;
+		padding: 140px 0 60px;
+		overflow: hidden;
+		.wellmethod_lists{
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: -145px;
+				    right: calc( (100vw - 1100px)/-2 );
+				width: 100%;
+				height: 100%;
+				background: #F6F6F3;
+				z-index: -1;
+				pointer-events: none;
+			}
+		}
+	}
+
+	.ss_brand__lists{
+		position: relative;
+		padding: 180px 0;
+		.el-item{
+			position: relative;
+			.ratio{
+				--bs-aspect-ratio: 53%;
+			}
+			&__meta{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 30px 120px;
+				display: flex;
+				align-items:center;
+				justify-content: center;
+			}
+			.-wrap-meta{
+				padding: 12px 20px;
+			    background: rgba(53, 137, 226, .8);
+			    color: #fff;
+			    width: 100%;
+			}
+			&__title{
+				font-size: 12px;
+				@include letter-spacing(310);
+				margin-bottom: 8px;
+			}
+			&__sub{
+				font-size: 22px;
+				text-transform: uppercase;
+				@include letter-spacing(100);
+			}
+
+			&.-s2{
+				.-wrap-meta{
+					background: rgba(199, 150, 3, .8);
+				}
+			}
+		}
+	}
+
+	.ss_subscription{
+		position: relative;
+		padding: 100px 0;
+		.el-box{
+			width: 100%;
+			max-width: 840px;
+			margin: 0 auto;
+			padding: 50px 100px;
+			background: #fff;
+			font-size: 14px;
+		}
+		.title_icon{
+			img{
+				width: 20px;
+				height: 20px;
 			}
 		}
 	}

@@ -1,19 +1,11 @@
-body {
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 300;
-	color: #4c4c4c;
-	font-size: 16px;
-	line-height: 25px;
-}
-a{
-	color: #333;
-}
+
+
 .py-150 {
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 .section {
-	margin-bottom: 55px;
+
 }
 .ratio{
 	display: block;
@@ -24,10 +16,12 @@ a{
 .head__title {
 	font-family: 'Shippori Mincho', serif;
 	margin-bottom: 50px;
+	@include letter-spacing(200);
 	.title {
-		font-size: 20px;
+		font-size: 26px;
 		font-weight: 500;
 		margin-bottom: 10px;
+		@include letter-spacing(100);
 	}
 	.sub {
 		position: relative;
@@ -53,7 +47,6 @@ a{
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 100px;
 		}
 	}
 }
@@ -63,6 +56,7 @@ a{
 	.text {
 		border-bottom: 2px solid #e4e4e4;
 		padding-bottom: 6px;
+		text-transform: capitalize;
 	}
 	.icon {
 		width: 18px;
@@ -75,17 +69,56 @@ a{
 	margin: 45px 0 0;
 }
 .btn_style_new {
+	display: inline-block;
+	min-width: 300px;
+	text-align: center;
 	font-family: 'Shippori Mincho', serif;
-	font-size: 14px;
+	font-size: 15px;
 	text-transform: uppercase;
-	letter-spacing: 2px;
 	background: #fff;
 	box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
 	border-radius: 0;
-	padding: 10px 50px;
+	padding: 7px 30px;
+	@include letter-spacing(200);
+	&:hover{
+		border-color: transparent;
+	}
 	.icon {
 		display: inline-block;
 		width: 18px;
 		margin-left: 10px;
+	}
+
+	&.-st2{
+		box-shadow: none;
+		background: #F6F6F3;
+	}
+}
+
+/**/
+.new-item{
+	position: relative;
+	&__thumb{
+		margin-bottom: 16px;
+	}
+	&__date{
+		position: relative;
+		padding-left: 28px;
+		font-size: 11px;
+		color: #969696;
+		margin-bottom: 10px;
+		&::before {
+		    content: "";
+		    position: absolute;
+		    left: 0;
+		    top: 50%;
+		    width: 18px;
+		    height: 2px;
+		    background: #dfdfdf;
+		}
+	}
+	&__title{
+		font-size: 15px;
+		line-height: 25px;
 	}
 }

@@ -27,11 +27,16 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    color: #4D4D4D;
+    font-size: 16px;
+    line-height: 25px;
+    @include letter-spacing(40);
 }
 
 a, a:hover {
-    color: #FFECA7;
+    color: #333;
     text-decoration: none;
 }
 
@@ -72,7 +77,14 @@ hr{
 .ratio > * {
     object-fit: contain;
 }
+.ratio.-cover > * {
+    object-fit: cover;
+}
 
+
+.fs-12{
+    font-size: 12px!important;
+}
 
 
 /**/
@@ -112,5 +124,18 @@ hr{
 
 }
 @media (max-width: 575px){
+
+}
+.container-1080 {
+    max-width: 1100px;
+}
+@media (min-width: 1400px){
+
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+        max-width: 1220px;
+    }
+    .container-1080 {
+        max-width: 1100px;
+    }
 
 }
