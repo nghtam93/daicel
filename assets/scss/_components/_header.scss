@@ -1,5 +1,60 @@
 .header{
-
+	&.head_abs {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9;
+	}
+	.logo {
+		max-width: 206px;
+		display: block;
+	}
+	.header_nav_logo {
+		padding: 15px 0;
+	}
+	.menu__main {
+		position: relative;
+		#navbar_menu {
+			position: absolute;
+			right: 0;
+			top: 100%;
+			background: #fff;
+			box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+			max-width: 300px;
+			width: 100%;
+			padding: 10px 15px;
+			z-index: 2;
+			text-align: left;
+			.nav-menu a {
+				text-transform: uppercase;
+				font-weight: 500;
+				color: #333;
+				display: block;
+				font-size: 14px;
+				padding: 5px 0px;
+			}
+		}
+		.navbar-toggler {
+			background: #fff;
+			height: 106px;
+			width: 106px;
+			border-radius: 100px;
+			padding: 0 30px;
+		}
+		.navbar-toggler span {
+			display: block;
+			height: 2px;
+			background: #ddd;
+			margin: 7px 0;
+			&.icon-text{
+				font-size: 15px;
+				color: rgb(102, 102, 102);
+				background: none;
+				line-height: 10px;
+			}
+		}
+	}
 	@media (max-width: 1399px){
 
 

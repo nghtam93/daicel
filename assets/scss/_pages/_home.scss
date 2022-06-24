@@ -1,0 +1,101 @@
+.home__wrapper{
+	.header_banner{
+		position: relative;
+		margin-bottom: 165px;
+		text-align: right;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 70%;
+			height: calc(100% + 70px);
+			background: #f7f7f5;
+		}
+		.thumb.ratio {
+			width: 76%;
+			display: inline-block;
+			overflow: hidden;			
+		}
+		.ratio > * {
+			object-fit: cover;
+		}	
+	}
+	.banner_item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		.container {
+			font-family: 'Shippori Mincho', serif;
+		}
+		.title {
+			font-size: 37px;
+			margin: 0 0 15px;
+			font-weight: 700;
+		}
+		.sub {
+			font-size: 28px;
+			font-weight: 400;
+		}
+	}
+	.ss_news {
+		.list_news{
+			li {
+				margin: 0 0 12px;
+			}
+			.date {
+				margin-right: 10px;
+				color: #979797;
+			}
+			.text {
+				color: #4c4c4c;
+			}
+		}
+	}
+	.ss_recommend{
+		.recommand_slide {
+			padding-top: 15px;
+		}
+		.swiper-slide {
+			width: 20%;
+		}
+		.thumb {
+			box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+			padding: 35px;			
+		}
+		.thumb .ratio {
+			display: block;
+		}
+		.content{
+			.title {
+				margin: 20px 0 10px;
+				a {
+					display: block;
+					color: #000;
+					font-size: 15px;
+				}
+			}
+			.des {
+				font-size: 12px;
+			}
+			.price {
+				font-size: 15px;
+				padding-left: 28px;
+				margin: 12px 0 0;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 18px;
+					height: 2px;
+					background: #dfdfdf;
+				}
+			}
+		}
+	}
+}
