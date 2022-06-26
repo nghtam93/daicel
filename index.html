@@ -4,35 +4,24 @@
     <meta charset="utf-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="images/logo.png" />
+    <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="assets/css/main.css" rel="stylesheet">
     <script src="assets/js/jquery-3.6.0.min.js"></script>
   </head>
   <body class="home">
 	<header class="header transparent head_abs">
-		<div class="container header_nav_logo">
+		<div class="container header_nav_logo py-3">
 			<div class="row align-items-center">
-				<div class="col-sm-6">
+				<div class="col-6">
 					<a class="logo" href="index.html">
 						<img src="images/logo-black.png" alt="logo">
 						<p class="logo__text">ダイセルヘルスケアオンラインショップ</p>
 					</a>
 				</div>
-				<div class="col-sm-6 menu__main text-end">
+				<div class="col-6 menu__main text-end">
 					<div class="nav__main">
-					  	<div class="collapse" id="navbar_menu">
-						    <nav class="nav-menu">
-						    	<ul>
-						    		<li><a href="#">Home</a></li>
-						    		<li><a href="#">Home</a></li>
-						    		<li><a href="#">Home</a></li>
-						    		<li><a href="#">Home</a></li>
-						    		<li><a href="#">Home</a></li>
-						    	</ul>
-						    </nav>
-					  	</div>					  
-					  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu" aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle navigation">
+					  	<button class="navbar-toggler" type="button" data-id="menu-mobile">
 						    <span class="icon-bar"></span>
 						    <span class="icon-bar"></span>
 						    <span class="icon-bar"></span>
@@ -43,31 +32,32 @@
 			</div>
 		</div>
 	</header>
-	<main class="main-wrapper home__wrapper">
-		<div class="header_banner">
+	<main class="main-wrapper home__wrapper overflow-hidden">
+		<section class="header_banner">
 			<div class="thumb ratio" ><img src="images/img3.jpg"></div>
 			<div class="d-flex align-items-center banner_item" >
 				<div class="container">
-					<h2 class="title">「朝起きると、楽しい」</h2>
-					<p class="sub">そんな毎日がはじまる。</p>
+					<h2 class="title wow fadeInUp">「朝起きると、楽しい」</h2>
+					<p class="sub wow fadeInUp">そんな毎日がはじまる。</p>
 				</div>
 			</div>
-		</div>
-		<div class="section ss_news container container-1080 new__update">
-			<div class="row">
-				<div class="col-md-2">
+		</section>
+
+		<section class="section ss_news container container-1080 new__update">
+			<div class="row mb-4 mb-sm-0">
+				<div class="col-md-2 wow fadeInLeft">
 					<div class="head__title">
 						<h2 class="title text-uppercase">News</h2>
 						<p class="sub">update.</p>
 					</div>
 				</div>
-				<div class="col-md-10">
+				<div class="col-md-10 wow fadeInRight">
 					<ul class="list_news">
-						<li><a href=""><span class="date">2022/04/22</span><span class="text">年末年始の配送のお知らせ／コールセンター稼働日について</span></a></li>
-						<li><a href=""><span class="date">2022/04/22</span><span class="text">「WELLMETHODソイエクオール」としてリニューアル販売</span></a></li>
-						<li><a href=""><span class="date">2022/04/22</span><span class="text">「WELLMETHOD®ニュートリコスメ」新発売！（ぷるきら生活からリニューアル）</span></a></li>
-						<li><a href=""><span class="date">2022/04/22</span><span class="text">新型コロナウィルス感染拡大防止のための受付体制変更について（5月31日更新）</span></a></li>
-						<li><a href=""><span class="date">2022/04/22</span><span class="text">新しくサイトオープンいたしました!</span></a></li>
+						<li class="text-truncate"><a href=""><span class="date">2022/04/22</span><span class="text">年末年始の配送のお知らせ／コールセンター稼働日について</span></a></li>
+						<li class="text-truncate"><a href=""><span class="date">2022/04/22</span><span class="text">「WELLMETHODソイエクオール」としてリニューアル販売</span></a></li>
+						<li class="text-truncate"><a href=""><span class="date">2022/04/22</span><span class="text">「WELLMETHOD®ニュートリコスメ」新発売！（ぷるきら生活からリニューアル）</span></a></li>
+						<li class="text-truncate"><a href=""><span class="date">2022/04/22</span><span class="text">新型コロナウィルス感染拡大防止のための受付体制変更について（5月31日更新）</span></a></li>
+						<li class="text-truncate"><a href=""><span class="date">2022/04/22</span><span class="text">新しくサイトオープンいたしました!</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -75,101 +65,118 @@
 			<div class="text-end">
 				<a class="btn btn-default" href="#">
 						<span class="text">View more</span>
-						<span class="icon"><img src="images/right-arr.png"></span>
+						<i class="icon-arrow-right"></i>
 					</a>
 			</div>
-		</div>
+		</section>
 		<!--  -->
-		<div class="section ss_recommend">
+
+		<section class="section ss_recommend -home">
 			<div class="container container-1080">
 				<div class="head__title">
-					<h2 class="title">RECOMMEND ITEM</h2>
-					<p class="sub">おすすめ商品</p>
+					<h2 class="title wow fadeInUp">RECOMMEND ITEM</h2>
+					<p class="sub wow fadeInUp">おすすめ商品</p>
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container wow fadeInUp">
 				<div class="swiper recommand_slide">
 				  <!-- Additional required wrapper -->
 				  <div class="swiper-wrapper">
 				    <!-- Slides -->
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/img4.png"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/img4.png"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="product.html" class="stretched-link">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/home-product-img-01.jpg"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/home-product-img-01.jpg"></div>
+				    			</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="product.html" class="stretched-link">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/img4.png"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/img4.png"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="product.html" class="stretched-link">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/home-product-img-02.jpg"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/home-product-img-02.jpg"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="product.html" class="stretched-link">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/home-product-img-03.jpg"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/home-product-img-03.jpg"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="product.html" class="stretched-link">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/home-product-img-04.jpg"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/home-product-img-04.jpg"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="product.html" class="stretched-link">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/home-product-img-01.jpg"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/home-product-img-01.jpg"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="#">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide recommand_item">
-				    	<div class="inner">
-				    		<div class="thumb"><a class="ratio ratio-1x1" href=""><img src="images/home-product-img-02.jpg"></a></div>
-				    		<div class="content">
-				    			<h4 class="title"><a href="#">みかんのセラミド</a></h4>
-				    			<p class="des text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
-				    			<p class="price">税込 1,404 円</p>
+				    <div class="swiper-slide">
+				    	<div class="product-item ef--zoomin">
+				    		<div class="product-item__thumb">
+				    			<div class="ratio ratio-1x1"><img src="images/home-product-img-02.jpg"></div>
+				    		</div>
+				    		<div class="product-item__meta">
+				    			<h4 class="product-item__title"><a href="#">みかんのセラミド</a></h4>
+				    			<p class="product-item__excerpt text__truncate -n3">水なしで、さっと飲める「みかんのセラミド」 ひと粒の中にみかんのセラミドをぎゅっと詰め込みました</p>
+				    			<p class="product-item__price">税込 1,404 円</p>
 				    		</div>
 				    	</div>
 				    </div>
@@ -181,22 +188,22 @@
 				  <div class="swiper-button-next"></div> -->
 				</div>
 				<div class="view__all">
-					<a class="btn btn_style_new" href="#">All item<span class="icon"><img src="images/right-arr.png"></span></a>
+					<a class="btn btn_style_new ef-btn-scale" href="#"><span>All item<i class="icon-arrow-right"></i></span></a>
 				</div>
 			</div>
 
-		</div>
+		</section>
 		<!--  -->
-		<div class="section ss_wellmethod">
+		<section class="section ss_wellmethod">
 			<div class="container container-1080">
 				<div class="head__title text-center head__center">
-					<h2 class="title">WELLMETHOD</h2>
-					<p class="sub">なめらかに、年をとる。</p>
+					<h2 class="title wow fadeInLeft">WELLMETHOD</h2>
+					<p class="sub  wow fadeInRight">なめらかに、年をとる。</p>
 				</div>
-				<div class="row wellmethod_lists">
+				<div class="row wellmethod_lists g-4 justify-content-center  wow fadeInUp">
 
-					<div class="col-md-4">
-						<div class="new-item">
+					<div class="col-sm-6 col-md-4">
+						<div class="new-item ef--zoomin">
 						  <div class="new-item__thumb">
 						    <div class="ratio ratio-4x3 -cover">
 						      <img src="images/wellmethod-img-01.jpg" alt="">
@@ -209,8 +216,8 @@
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="new-item">
+					<div class="col-sm-6 col-md-4">
+						<div class="new-item ef--zoomin">
 						  <div class="new-item__thumb">
 						    <div class="ratio ratio-4x3 -cover">
 						      <img src="images/wellmethod-img-02.jpg" alt="">
@@ -223,8 +230,8 @@
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="new-item">
+					<div class="col-sm-6 col-md-4">
+						<div class="new-item ef--zoomin">
 						  <div class="new-item__thumb">
 						    <div class="ratio ratio-4x3 -cover">
 						      <img src="images/wellmethod-img-03.jpg" alt="">
@@ -239,22 +246,22 @@
 
 
 				</div>
-				<div class="view__all">
-					<a class="btn btn_style_new" href="#">READ MORE<span class="icon"><img src="images/right-arr.png"></span></a>
+				<div class="view__all wow fadeInUp">
+					<a class="btn btn_style_new ef-btn-scale" href="#"><span>READ MORE<i class="icon-arrow-right"></i></span></a>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--  -->
-		<div class="section ss_brand__lists text-center">
+		<section class="section ss_brand__lists text-center">
 			<div class="container container-1080">
 				<div class="head__title head__center">
-					<h2 class="title">BRAND LIST</h2>
+					<h2 class="title wow fadeInUp">BRAND LIST</h2>
 					<p class="sub"></p>
 				</div>
-				<div class="row g-sm-5">
-					<div class="col-sm-6">
+				<div class="row g-4 g-md-5">
+					<div class="col-md-6 wow fadeInLeft">
 
-						<div class="el-item -s1">
+						<div class="el-item -s1 ef--zoomin">
 						  <div class="el-item__thumb">
 						    <div class="ratio -cover">
 						      <img src="images/brand-list-img-01.jpg" alt="">
@@ -269,9 +276,9 @@
 						</div>
 
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6 wow fadeInRight">
 
-						<div class="el-item -s2">
+						<div class="el-item -s2 ef--zoomin">
 						  <div class="el-item__thumb">
 						    <div class="ratio -cover">
 						      <img src="images/brand-list-img-02.jpg" alt="">
@@ -288,89 +295,115 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--  -->
-		<div class="section ss_subscription" style="background: url(images/banner1.png) center center / cover no-repeat;">
-			<div class="el-box text-center">
-				<div class="head__title head__center">
-					<h2 class="title title_icon"><img src="images/load.png" class="me-2"><span>定期お届けコース</span></h2>
-					<p class="sub">Subscription</p>
-				</div>
-				<div class="content text-start">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
-				<div class="view__all">
-					<a class="btn btn_style_new -st2" href="#">READ MORE<span class="icon"><img src="images/right-arr.png"></span></a>
+		<section class="section ss_subscription" style="background: url(images/banner1.png) center center / cover no-repeat;">
+			<div class="container">
+				<div class="el-box text-center wow fadeInUp">
+					<div class="head__title head__center">
+						<h2 class="title title_icon"><img src="images/load.png" class="me-2"><span>定期お届けコース</span></h2>
+						<p class="sub">Subscription</p>
+					</div>
+					<div class="content text-start">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+					<div class="view__all">
+						<a class="btn btn_style_new -st2 ef-btn-scale" href="#"><span>READ MORE<i class="icon-arrow-right"></i></span></a>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</main>
 
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="footer-item">
-						<h2 class="footer__title">SITEMAP.</h2>
-						<div class="content nav__menu">
-							<ul>
-								<li class="nav_item"><a class="nav_link" href="">トップページ</a></li>
-								<li class="nav_item"><a class="nav_link" href="">商品一覧</a></li>
-								<li class="nav_item"><a class="nav_link" href="">WELLMETHOD</a></li>
-								<li class="nav_item"><a class="nav_link" href="">白幻鳳凰</a></li>
-								<li class="nav_item"><a class="nav_link" href="">ハンディサプリ</a></li>
-								<li class="nav_item"><a class="nav_link" href="">定期お届けコース</a></li>
-								<li class="nav_item"><a class="nav_link" href="">新着情報</a></li>
-								<li class="nav_item"><a class="nav_link" href="">ご利用ガイド</a></li>
-								<li class="nav_item"><a class="nav_link" href="">よくある質問</a></li>
-								<li class="nav_item"><a class="nav_link" href="">お問い合わせ</a></li>
-							</ul>
+				<div class="col-md-8">
+
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+								<div class="footer-item">
+									<h2 class="footer__title">SITEMAP.</h2>
+									<div class="nav__menu">
+										<ul>
+											<li class="nav_item"><a class="nav_link" href="">トップページ</a></li>
+											<li class="nav_item"><a class="nav_link" href="">商品一覧</a></li>
+											<li class="nav_item"><a class="nav_link" href="">WELLMETHOD</a></li>
+											<li class="nav_item"><a class="nav_link" href="">白幻鳳凰</a></li>
+											<li class="nav_item"><a class="nav_link" href="">ハンディサプリ</a></li>
+											<li class="nav_item"><a class="nav_link" href="">定期お届けコース</a></li>
+											<li class="nav_item"><a class="nav_link" href="">新着情報</a></li>
+											<li class="nav_item"><a class="nav_link" href="">ご利用ガイド</a></li>
+											<li class="nav_item"><a class="nav_link" href="">よくある質問</a></li>
+											<li class="nav_item"><a class="nav_link" href="">お問い合わせ</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6">
+								<div class="footer-item payment">
+									<h2 class="footer__title">PAY MENT.</h2>
+									<div class="content">
+										<p><span>・クレジットカード</span><br><img src="images/card.png"></p>
+										<p><span>・銀行振込</span><br><img src="images/rakuten.png"></p>
+										<p>・ApplePay</p>
+										<p>・セブンイレブン（前払）</p>
+										<p>・ローソン、郵便局ATM等（前払）</p>
+										<p>※詳しくは<a href="">お支払について</a>をご参照下さい。</p>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="footer-item">
-						<h2 class="footer__title">SHOP INFO.</h2>
-						<div class="content info_shop">
-							<p>◆ショップ名</p>
-							<p>ダイセルヘルスケアオンラインショップ</p>
-							<p>◆運営会社</p>
-							<p>〒530-0011　大阪府大阪市北区大深町3-1</p>
-							<p>グランフロント大阪タワーB</p>
+
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+								<div class="footer-item">
+									<h2 class="footer__title">SHOP INFO.</h2>
+									<div class="info_shop">
+										<p><i class="icon-rhombus me-2"></i>ショップ名</p>
+										<p>ダイセルヘルスケアオンラインショップ</p>
+										<p><i class="icon-rhombus me-2"></i>運営会社</p>
+										<p>〒530-0011　大阪府大阪市北区大深町3-1</p>
+										<p>グランフロント大阪タワーB</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-6">
+								<div class="footer-item contact">
+									<h2 class="footer__title">CONTACT.</h2>
+									<div class="content">
+										<p><i class="icon-rhombus me-2"></i>Mail <a href="mailto:healthdare@jp.daicel.com">healthdare@jp.daicel.com</a></p>
+										<p><i class="icon-rhombus me-2"></i>TEL <a href="tel:0120-541-870">0120-541-870</a></p>
+										<p><i class="icon-rhombus me-2"></i>営業時間　9：00～20：00</p>
+										<p><i class="icon-rhombus me-2"></i>休業日　当店カレンダー参照</p>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+
 				</div>
+
 				<div class="col-md-4">
-					<div class="footer-item payment">
-						<h2 class="footer__title">PAY MENT.</h2>
-						<div class="content">
-							<p><span>・クレジットカード</span><br><img src="images/card.png"></p>
-							<p><span>・銀行振込</span><br><img src="images/rakuten.png"></p>
-							<p>・ApplePay</p>
-							<p>・セブンイレブン（前払）</p>
-							<p>・ローソン、郵便局ATM等（前払）</p>
-							<p>※詳しくはお支払についてをご参照下さい。</p>
+					<div class="row">
+
+						<div class="col-md-12">
+							<div class="footer-item delivery">
+								<h2 class="footer__title">DELIVERY.</h2>
+								<div class="content">
+									<p>・送料　300円（税込）</p>
+									<p class="bg_orange d-inline-block px-2">3,000円（税込み）以上で送料無料</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="footer-item contact">
-						<h2 class="footer__title">CONTACT.</h2>
-						<div class="content">
-							<p>◆Mail <a href="mailto:healthdare@jp.daicel.com">healthdare@jp.daicel.com</a></p>
-							<p>◆TEL <a href="tel:0120-541-870">0120-541-870</a></p>
-							<p>◆営業時間　9：00～20：00</p>
-							<p>◆休業日　当店カレンダー参照</p>
+
+						<div class="col-md-12">
+							<div class="footer-item calendar">
+								<h2 class="footer__title">CALENDER</h2>
+								<div class="content">
+									<img src="images/calendar.png">
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="footer-item delivery">
-						<h2 class="footer__title">DELIVERY.</h2>
-						<div class="content">
-							<p>・送料　300円（税込）</p>
-							<p class="bg_orange">3,000円（税込み）以上で送料無料</p>
-						</div>
-					</div>
-					<div class="footer-item calendar">
-						<h2 class="footer__title">CALENDER</h2>
-						<div class="content">
-							<img src="images/calendar.png">
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -384,8 +417,22 @@
 		<p>©DAICEL Healthcare Onlineshop. All Rights Reserved.</p>
 	</div>
 
+	<nav id="menu-mobile" class="nav-mobile">
+	    <div class="nav-mobile__close icon-close js-menu__close"></div>
+	      <div class="nav-mobile__content">
+	        <ul class="nav-mobile--ul mb-4">
+	          <li><a href="#">Home</a></li>
+		    		<li><a href="#">Home</a></li>
+		    		<li><a href="#">Home</a></li>
+		    		<li><a href="#">Home</a></li>
+		    		<li><a href="#">Home</a></li>
+	        </ul>
+	      </div>
+	 </nav>
+
     <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
     // 	function set_padding_slidefull(){

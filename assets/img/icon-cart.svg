@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="icn_cart" transform="translate(-1095 -217)">
+    <rect id="Rectangle_88" data-name="Rectangle 88" width="30" height="30" transform="translate(1095 217)" fill="#fff" opacity="0"/>
+    <g id="_9027005_shopping_cart_thin_icon" data-name="9027005_shopping_cart_thin_icon" transform="translate(1096 217.451)">
+      <path id="Path_1459" data-name="Path 1459" d="M35.874,42.928H22.364l-3.3-18.147A.946.946,0,0,0,18.141,24H16" transform="translate(-14.107 -21.161)" fill="none" stroke="#314153" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="2" cy="2" r="2" transform="translate(7 23.549)" fill="#314153"/>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="2" cy="2" r="2" transform="translate(20 23.549)" fill="#314153"/>
+      <path id="Path_1460" data-name="Path 1460" d="M49.715,73.464H64.574a1.881,1.881,0,0,0,1.857-1.55L67.874,64H48" transform="translate(-42.322 -56.429)" fill="none" stroke="#314153" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+    </g>
+  </g>
+</svg>

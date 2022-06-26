@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="icn_register" transform="translate(-1117.662 -35.365)">
+    <rect id="Rectangle_86" data-name="Rectangle 86" width="30" height="30" transform="translate(1117.662 35.365)" fill="#fff" opacity="0.005"/>
+    <g id="_2202248_account_add_avatar_human_man_icon" data-name="2202248_account_add_avatar_human_man_icon" transform="translate(1119.049 37.365)">
+      <path id="Path_1463" data-name="Path 1463" d="M18.539,15.077A6.539,6.539,0,1,0,12,8.539,6.558,6.558,0,0,0,18.539,15.077Zm0-11.987A5.449,5.449,0,1,1,13.09,8.539,5.465,5.465,0,0,1,18.539,3.09Z" transform="translate(-4.551)" fill="#314153"/>
+      <path id="Path_1464" data-name="Path 1464" d="M18.891,28H9.083A7.069,7.069,0,0,0,2,35.083v2.724H3.09V35.083A5.976,5.976,0,0,1,9.083,29.09h9.808Z" transform="translate(0 -11.833)" fill="#314153"/>
+      <path id="Path_1465" data-name="Path 1465" d="M39.628,35.269H36.359V32h-1.09v3.269H32v1.09h3.269v3.269h1.09V36.359h3.269Z" transform="translate(-13.654 -13.654)" fill="#314153"/>
+    </g>
+  </g>
+</svg>

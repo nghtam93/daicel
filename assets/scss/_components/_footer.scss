@@ -1,7 +1,15 @@
 .footer{
 	position: relative;
-	padding: 100px 0;
+	padding: 100px 0 50px;
 	background: #F5F5F5;
+	font-size: 14px;
+	line-height: 28px;
+	a{
+		color: #3F9CC9;
+	}
+	&-item{
+		margin-bottom: 50px;
+	}
 	&__title{
 		padding: 10px 0;
 		margin-bottom: 20px;
@@ -11,14 +19,33 @@
 		@include letter-spacing(200);
 		border-bottom: 1px solid #C9C9C9;
 	}
+	.bg_orange{
+		font-size: 14px;
+		line-height: normal;
+		font-weight: 700;
+		color: #fff;
+		background: #F4901E;
+	}
+
+	.nav__menu {
+		a{
+			color: #4D4D4D;
+			&:hover{
+				color: #3F9CC9;
+			}
+		}
+	}
 	@media (max-width: 1399px){
 
 	}
 	@media (max-width: 1199px){
-
+		padding: 80px 0 30px;
 	}
 	@media (max-width: 991px){
-
+		padding: 60px 0 30px;
+		&-item {
+		    margin-bottom: 30px;
+		}
 	}
 	@media (max-width: 767px){
 
@@ -40,4 +67,13 @@
 			max-height: 34px;
 		}
 	}
+	@media ( max-width: 1399px ) {}
+	@media ( max-width: 1199px ) {
+		padding: 40px 0;
+	}
+	@media ( max-width: 991px ) {
+
+	}
+	@media ( max-width: 767px ) {}
+	@media ( max-width: 575px ) {}
 }

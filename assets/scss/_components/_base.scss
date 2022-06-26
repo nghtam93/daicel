@@ -1,38 +1,49 @@
-$color_primary:#E09B0F;$color_secondary:#BEE274;
+$color_primary:#314153;$color_secondary:#BEE274;
 .-color-primary{color:$color_primary;}
 
 //Default
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed,
+// figure, figcaption, footer, header, hgroup,
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video {
+//     margin: 0;
+//     padding: 0;
+//     border: 0;
+//     font-size: 100%;
+//     vertical-align: baseline;
+// }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+// article, aside, details, figcaption, figure,
+// footer, header, hgroup, menu, nav, section {
+//     display: block;
+// }
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
     color: #4D4D4D;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
     @include letter-spacing(40);
+}
+
+ul,ol{list-style:none;padding:0;margin-bottom:0}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{line-height:normal;}
+p{
+    margin-bottom: 0;
+}
+a{text-decoration:none;-webkit-transition-duration:0.4s;-o-transition-duration:0.4s;transition-duration:0.4s;}
+a:hover{text-decoration:none;}
+img{
+    max-width: 100%;
 }
 
 a, a:hover {
@@ -71,7 +82,7 @@ strong{
     font-weight: 700;
 }
 hr{
-    background-color: #512B35;
+    background-color: #C9C9C9;
     opacity: 1;
 }
 .ratio > * {
@@ -126,8 +137,11 @@ hr{
 @media (max-width: 575px){
 
 }
-.container-1080 {
-    max-width: 1100px;
+
+@media (min-width: 1200px){
+    .container-1080 {
+        max-width: 1100px;
+    }
 }
 @media (min-width: 1400px){
 

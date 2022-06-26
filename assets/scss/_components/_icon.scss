@@ -29,4 +29,66 @@
         height: 20px;
         -webkit-mask-image: url(../img/icon-close.svg);
     }
+    &-search:before{
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        -webkit-mask-image: url(../img/icon-magnifier.svg);
+    }
+    &-cart:before{
+        top: 2px;
+        width: 30px;
+        height: 30px;
+        -webkit-mask-image: url(../img/icon-cart.svg);
+    }
+    &-faq:before{
+        top: 2px;
+        width: 30px;
+        height: 30px;
+        -webkit-mask-image: url(../img/icon-faq.svg);
+    }
+    &-login:before{
+        top: 2px;
+        width: 30px;
+        height: 30px;
+        -webkit-mask-image: url(../img/icon-login.svg);
+    }
+    &-register:before{
+        top: 2px;
+        width: 30px;
+        height: 30px;
+        -webkit-mask-image: url(../img/icon-register.svg);
+    }
+    &-arrow-right:before{
+        width: 10px;
+        height: 10px;
+        -webkit-mask-image: url(../img/icon-arrow-right.svg);
+    }
+    &-arrow-circle:before{
+        top: 2px;
+        width: 30px;
+        height: 30px;
+        -webkit-mask-image: url(../img/icon-arrow-circle.svg);
+    }
+    &-tollfree:before{
+        width: 30px;
+        height: 20px;
+        -webkit-mask-image: url(../img/icon-tollfree.svg);
+    }
+    &-star:before{
+        top: 2px;
+        width: 30px;
+        height: 20px;
+        -webkit-mask-image: url(../img/icon-star.svg);
+        background-color: #5AC2CB;
+    }
+    &-rhombus {
+        &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #4D4D4D;
+            transform: rotate(45deg);
+        }
+    }
 }
